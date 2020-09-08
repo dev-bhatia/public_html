@@ -6,23 +6,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- SITE TITLE ON TAB-->
-        <title> Dev Bhatia </title>
+        <title> Dev's Advice to Undergrads </title>
 
-        <!-- FAVICON -->
-        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-
-        <!-- CSS & JS Reference -->
-        <link rel="stylesheet" type="text/css" href="base.css">
+        <!-- CSS Reference -->
+        <link rel="stylesheet" type="text/css" href="root.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
 
     <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- JS FOR AUTOMATIC LIGHT/DARK MODE -->
+        <script type="text/javascript">
+            $(function() {
+                var hour = (new Date).getHours();
+                if (hour >= 16) { 
+                    $('.wrapper').removeClass('light').addClass('dark'); 
+                    $('body').removeClass('light').addClass('dark'); 
+                    $('html').removeClass('light').addClass('dark'); 
+                } 
+                else { 
+                    $('.wrapper').removeClass('dark').addClass('light');
+                    $('body').removeClass('dark').addClass('light');
+                    $('html').removeClass('dark').addClass('light'); 
+                }
+            });
+        </script>
+
         <center>
-            <h1>This site has moved to <a href="https://dev-bhatia.github.io" target="_blank"> this other site </a><h1>
-            <h2>&#x1F643;</h2>
-            <iframe width="750" height="480" src="https://www.youtube.com/embed/GM-e46xdcUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br><br><br><br><br>
-            <center style="color:#FFF;">Dev Bhatia 2020</center>
+        <div class="wrapper light">
+            <h1> Engineering Undergrad at UCSD </h1>
+            <h2> Dev Bhatia </h2>
+            <h3> Class of 2021 </h3>
+            <br>
+            <br>
+            
+            <h4> Introduction </h4><tag id="intro"></tag>
+            <h5>
+                Hi. At the time of this writing, I'm heading into my senior year hoping to graduate with a BS in Electrical Engineering soon.
+            </h5>
+            <hr><h4> UCSD College System </h4><tag id="do"></tag>
+            <h5>
+
+            </h5>
+            <hr><h4> Student Discounts </h4><tag id="do"></tag>
+            <h5>
+
+            </h5>
+            <hr><h4> T Shaped </h4><tag id="do"></tag>
+            <h5>
+
+            </h5>
+            <hr><h4> Coursework </h4><tag id="projects"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Tests </h4><tag id="tests"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Projects </h4><tag id="projects"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> All Nighters </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Stu-dying </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Grades </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Career Stuff </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Orgs & Clubs </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Working On-Campus </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Recommended Reading </h4><tag id="grades"></tag>
+            <h5>
+                - 48 Laws of Power (Not the whole book, just the laws)<br>
+                - My Inventions by Nikola Tesla <br>
+                - Cracking the PM Interview <br>
+                - Basic Machines And How They Work
+            </h5>
+            <hr><h4> DO's </h4><tag id="do"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> DON'Ts </h4><tag id="dont"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Looking Back </h4><tag id="grades"></tag>
+            <h5>
+                
+            </h5>
+            <hr><h4> Resources </h4><tag id="grades"></tag>
+            <h5>
+                These are some links to useful 
+            </h5>
+        </div>
         </center>
     </body>
 </html>

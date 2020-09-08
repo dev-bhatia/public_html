@@ -1,0 +1,66 @@
+/* inter font */
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+ 
+.light {
+  --main-bg-color: #FFF;
+  --main-tx-color: #000;
+  --main-alt-color: rgb(223, 223, 223);
+}
+
+.dark {
+  --main-bg-color: #222;
+  --main-tx-color: rgb(255, 255, 255);
+  --main-alt-color: rgb(255, 152, 152);
+}
+
+.wrapper {
+    width: 55%;
+    align-items: center;
+    text-align: center;
+    color: var(--main-tx-color);
+}
+
+html, body {
+    background: var(--main-bg-color);
+    height: 100%;
+}
+
+/* HEADING */
+h1 {
+    font-size: calc(1rem + 2vw);
+    font-weight: 600;
+}
+h2 {
+  font-size: calc(1rem + 0.3vw);
+  font-weight: 300;
+}
+h3 {
+    font-size: calc(0.75rem + 0.25vw);
+    font-weight: 200;
+}
+
+/* CONTENT */
+h4 {
+    font-size: calc(1rem + 0.3vw);
+    font-weight: 600;
+    text-align: left;
+}
+
+h5 {
+    font-size: calc(1rem + 0.2vw);
+    font-weight: 300;
+    text-align: left;
+    margin-left: 5%;
+    line-height: 1.75;
+}
+
+/* SMALL SCREENS */
+@media screen and (max-width : 1000px) {
+    .wrapper {
+        width: 75%;
+    }
+}   
