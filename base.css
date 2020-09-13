@@ -8,19 +8,19 @@ html { font-family: 'Inter', sans-serif; }
 .light {
   --main-bg-color: #FFF;
   --main-tx-color: #000;
-  --main-tx-2-color: rgb(46, 46, 46);
+  --main-tx-2-color: rgb(147, 147, 147);
   --main-link-color: #98ff86;
 }
 
 .dark {
   --main-bg-color: #222;
   --main-tx-color: rgb(255, 255, 255);
-  --main-tx-2-color: rgb(255, 255, 255);
+  --main-tx-2-color: rgb(80, 80, 80);
   --main-link-color: #106a00;
 }
 
 .wrapper {
-    width: 55%;
+    width: 80%;
     align-items: center;
     text-align: left;
     color: var(--main-tx-color);
@@ -53,11 +53,16 @@ h4 {
 }
 
 h5 {
-    font-size: calc(1rem + 0.2vw);
-    font-weight: 300;
-    text-align: left;
-    margin-left: 5%;
-    line-height: 1.75;
+  font-size: calc(1rem + 0.2vw);
+  font-weight: 300;
+  text-align: left;
+  margin-left: 5%;
+  line-height: 1.75;
+}
+
+i {
+  color: var(--main-tx-2-color);
+  font-weight: 500;
 }
 
 b {
@@ -65,8 +70,7 @@ b {
 }
 
 a, a:visited {
-  /* font-size: calc(1rem + 0.6vw); */
-  color: var(--main-tx-2-color);
+  /* color: var(--main-tx-2-color); */
   text-decoration: none;
   font-weight: 400;
   text-align: left;
@@ -107,6 +111,6 @@ a:hover:before, a:focus:before, a:active:before {
 /* SMALL SCREENS */
 @media screen and (max-width : 1000px) {
     .wrapper {
-        width: 75%;
+        width: 85%;
     }
 }   
