@@ -15,7 +15,7 @@ html { font-family: 'Inter', sans-serif; }
 .dark {
   --main-bg-color: #222;
   --main-tx-color: rgb(255, 255, 255);
-  --main-tx-2-color: rgb(80, 80, 80);
+  --main-tx-2-color: rgb(145, 143, 143);
   --main-link-color: #106a00;
 }
 
@@ -62,11 +62,11 @@ h5 {
 
 i {
   color: var(--main-tx-2-color);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a, a:visited {
