@@ -108,6 +108,10 @@ a:hover:before, a:focus:before, a:active:before {
   right: 0;
 }
 
+footer{
+  padding: 50px 0;
+}
+
 /* SMALL SCREENS */
 @media screen and (max-width : 1000px) {
     .wrapper {

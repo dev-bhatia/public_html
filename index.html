@@ -1,155 +1,290 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- DEFAULTS -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <!-- DEFAULTS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- SITE TITLE ON TAB-->
-        <title> Dev's Advice to Undergrads </title>
+    <!-- SITE TITLE ON TAB-->
+    <title>Dev's Advice to Undergrads</title>
 
-        <!-- CSS Reference -->
-        <link rel="stylesheet" type="text/css" href="base.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    </head>
+    <!-- CSS Reference -->
+    <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="styles/accordion.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
 
-    <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- JS FOR AUTOMATIC LIGHT/DARK MODE -->
-        <script type="text/javascript">
-            $(function() {
-                var hour = (new Date).getHours();
-                if (hour >= 19) { 
-                    $('.wrapper').removeClass('light').addClass('dark'); 
-                    $('body').removeClass('light').addClass('dark'); 
-                    $('html').removeClass('light').addClass('dark'); 
-                } 
-                else { 
-                    $('.wrapper').removeClass('dark').addClass('light');
-                    $('body').removeClass('dark').addClass('light');
-                    $('html').removeClass('dark').addClass('light'); 
-                }
-            });
-        </script>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS FOR AUTOMATIC LIGHT/DARK MODE -->
+    <script type="text/javascript"></script>
 
-        <center>
-        <div class="wrapper light">
-            <h1> Engineering Undergrad </h1>
-            <h4 style="margin: 0;"> Dev Bhatia </h4>
-            <h3 style="margin: 0;"> Class of 2021 </h3>
-            
-            <!-- <h4> Introduction </h4><tag id="intro"></tag> -->
-            <h5 style="margin-left: 0;">
-                This is my reflection on the undergrad engineering experience with some tips here and there.
-                A little bit about me - I studied electrical engineering at UC San Diego, was part of some student orgs, worked on-campus,
-                volunteered at a neuroscience research lab, and held internships at Intel, Tesla, and Microsoft during my undergrad.
-                Obviously, this is all my opinion.
-            </h5>
+    <center>
+      <div class="wrapper light">
+        <h1>Engineering Undergrad</h1>
+        <h4 style="margin: 0">Dev Bhatia</h4>
+        <h3 style="margin: 0">Class of 2021</h3>
 
-            <hr><h4> T Shaped </h4>
-            <h5>
-                "Be T Shaped" was one of the best pieces of advice I got near the end of my freshman year. The horizontal bar at the top of the "T" represents all that you know, and the vertical bar in the middle represents the depth to which you know something. I've observed that in most engineering curriculums at UCSD, students gain an in-depth understanding of their major only. This is not sufficient. <br><br>
-                Generally there are three main fields of engineering (software, electronics, and mechanical), within which there are different majors/disciplines. I know there's also bio/chem/nano and many others that do not fit into these, but the point is don't limit yourself to just one. For example, if you major within software engineering, complement that with some electronics fundamentals ("People who really care about software, build their own hardware" or something like that).<br><br>
-                I could pair different majors and go into how they complement one another, but what I've observed is to have a good understanding of the digital (software, computing) and physical (electrical hardware, robotics, structures) worlds as much as you can.
-            </h5>
-            <hr><h4> Coursework </h4>
-            <h5>
-                <b> 4 Year Plan(s) </b><br>
-                This plan is like any other plan, it will change.
-            </h5>
-            <hr><h4> Tests </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Projects </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> All Nighters </h4>
-            <h5>
-                Only do these if you really need to. No one cares how long you take to do something, it's the results that matter.
-            </h5>
-            <hr><h4> Stu-dying </h4>
-            <h5>
-                Don't do this unless you you have an exam. Being swamped with homework and projects, most don't study 
-                for their classes for fun. It is more important to 
-                
-            </h5>
-            <hr><h4> Grades </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Career Stuff </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Orgs & Clubs </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Working On Campus </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Living Off Campus </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Decision Making </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Books I found helpful </h4>
-            <h5>
-                <b> My Inventions <i>by Nikola Tesla</i></b><br>
-                In the fast-paced and dynamic world of tech, sometimes we forgot what it means to invent 
-                or why even continue studying engineering - this short autobiography reinstills the spirit of innovation. 
-                <br>
-                
-                <b> The No BS Guide to Linear Algebra <i>by Ivan Savov</i></b><br>
-                A very striaghforward approach to learning one of the most fundemental topics in math.
-                At the very least, you will learn how to "read" math. Knowing how to read math will
-                expedite your ability to grasp concepts, definitions, and theorems in your couses.
-                <br>
+        <!-- <h4> Introduction </h4><tag id="intro"></tag> -->
+        <h5 style="margin-left: 0">
+          This is my reflection on the undergrad engineering experience with
+          some tips here and there. A little bit about me - I studied electrical
+          engineering at UC San Diego, was part of some student orgs, worked
+          on-campus, volunteered at a neuroscience research lab, and held
+          internships at Intel, Tesla, and Microsoft during my undergrad.
+          Obviously, this is all my opinion.
+        </h5>
 
-                <b> Cracking the PM Interview <i>by Gayle Laakmann McDowell & Jackie Bavaro</i></b><br>
-                Regardless of your intent to purse the PM role or your ability to engineer solutions, great teams indirectly seek out people who can 
-                access the impact and reach of their work both internally for the team and externally for users. 
-                This book helps you develop that mindest through real examples and clear guidance.
-                <br>
+        <hr />
 
-                <b> It's Not How Good You Are, It's How Good You Want To Be <i>by Paul Arden</i> </b><br>
-                Short, simple, and well worth it. Takes about 20-30 minutes to read. The title says it all.
-                <br>
-
-                <b> 48 Laws of Power <i>by Robert Greene</i></b><br>
-                Just the laws and descriptions, not the whole book.
-                <br>
-
-                <!-- <b> Basic Machines and How They Work </b><br> -->
-            </h5>
-            <hr><h4> Specifically for UC San Diego </h4>
+        <section>
+          <button class="accordion">
+            <h4>T Shaped</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
             <h5>
-                <b> College System </b><br>
-                UCSD has 7 colleges (6 when I started, maybe even more now). 
-                No, they are not like the houses at Hogwarts.
+              "Be T Shaped" was one of the best pieces of advice I got near the
+              end of my freshman year. The horizontal bar at the top of the "T"
+              represents all that you know, and the vertical bar in the middle
+              represents the depth to which you know something. I've observed
+              that in most engineering curriculums at UCSD, students gain an
+              in-depth understanding of their major only. This is not
+              sufficient. <br /><br />
+              Generally there are three main fields of engineering (software,
+              electronics, and mechanical), within which there are different
+              majors/disciplines. I know there's also bio/chem/nano and many
+              others that do not fit into these, but the point is don't limit
+              yourself to just one. For example, if you major within software
+              engineering, complement that with some electronics fundamentals
+              ("People who really care about software, build their own hardware"
+              or something like that).<br /><br />
+              I could pair different majors and go into how they complement one
+              another, but what I've observed is to have a good understanding of
+              the digital (software, computing) and physical (electrical
+              hardware, robotics, structures) worlds as much as you can.
             </h5>
-            <hr><h4> Looking Back </h4>
-            <h5>
-                
-            </h5>
-            <hr><h4> Resources </h4>
-            <h5>
-                These are some links to useful 
-            </h5>
-            <hr>
+          </div>
 
-            <h5 style="margin-left: 0; color: var(--main-tx-2-color);">
-                <b>Disclaimer </b> <br>
-                This is all my opinion, published in good faith, and only meant for general informational purposes.
-                Any action you take upon this website and the information you find on this website, is strictly at your own risk.
+          <hr />
+
+          <button class="accordion">
+            <h4>Coursework</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5>
+              <b> 4 Year Plan(s) </b><br />
+              This plan is like any other plan, it will change.
             </h5>
-        </div>
-        </center>
-    </body>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Tests</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Projects</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>All Nighters</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5>
+              Only do these if you really need to. No one cares how long you
+              take to do something, it's the results that matter.
+            </h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Stu-dying</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5>
+              Don't do this unless you you have an exam. Being swamped with
+              homework and projects, most don't study for their classes for fun.
+              It is more important to
+            </h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Grades</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Career Stuff</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Orgs and Clubs</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Working on Campus</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Living off Campus</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+
+          <button class="accordion">
+            <h4>Decision Making</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+          <hr />
+          
+          <button class="accordion">
+            <h4>Books I found helpful</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5>
+                <h5>
+                    <b> My Inventions <i>by Nikola Tesla</i></b
+                    ><br />
+                    In the fast-paced and dynamic world of tech, sometimes we forgot
+                    what it means to invent or why even continue studying engineering -
+                    this short autobiography reinstills the spirit of innovation.
+                    <br />
+        
+                    <b> The No BS Guide to Linear Algebra <i>by Ivan Savov</i></b
+                    ><br />
+                    A very striaghforward approach to learning one of the most
+                    fundemental topics in math. At the very least, you will learn how to
+                    "read" math. Knowing how to read math will expedite your ability to
+                    grasp concepts, definitions, and theorems in your couses.
+                    <br />
+        
+                    <b>
+                      Cracking the PM Interview
+                      <i>by Gayle Laakmann McDowell & Jackie Bavaro</i></b
+                    ><br />
+                    Regardless of your intent to purse the PM role or your ability to
+                    engineer solutions, great teams indirectly seek out people who can
+                    access the impact and reach of their work both internally for the
+                    team and externally for users. This book helps you develop that
+                    mindest through real examples and clear guidance.
+                    <br />
+        
+                    <b>
+                      It's Not How Good You Are, It's How Good You Want To Be
+                      <i>by Paul Arden</i> </b
+                    ><br />
+                    Short, simple, and well worth it. Takes about 20-30 minutes to read.
+                    The title says it all.
+                    <br />
+        
+                    <b> 48 Laws of Power <i>by Robert Greene</i></b
+                    ><br />
+                    Just the laws and descriptions, not the whole book.
+                    <br />
+              </h5>
+          </div>
+          
+          <hr />
+
+          <button class="accordion">
+            <h4>Specifically for UC San Diego</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+            <h5>
+                <b> College System </b><br />
+                UCSD has 7 colleges (6 when I started, maybe even more now). No,
+                they are not like the houses at Hogwarts.
+              </h5>
+          </div>
+    
+          <hr />
+
+          <button class="accordion">
+            <h4>Looking back</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+              <h5></h5>
+          </div>
+
+        <hr />
+
+        <button class="accordion">
+            <h4>Resources</h4>
+            <img src="assets/button.svg" />
+          </button>
+          <div class="panel">
+        <h5>These are some links to useful</h5>
+    </div>
+
+        <hr />
+    </section>
+
+    <footer>
+        <h5 style="margin-left: 0; color: var(--main-tx-2-color)">
+          <b>Disclaimer </b> <br />
+          This is all my opinion, published in good faith, and only meant for
+          general informational purposes. Any action you take upon this website
+          and the information you find on this website, is strictly at your own
+          risk.
+        </h5>
+    </footer>
+      </div>
+    </center>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
 </html>
