@@ -4,7 +4,7 @@ html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
- 
+
 .light {
   --main-bg-color: #FFF;
 
@@ -23,8 +23,8 @@ html { font-family: 'Inter', sans-serif; }
   --main-bg-color: #222;
 
   /* Text Colors */
-  --main-tx-color: rgb(255, 255, 255);
-  --main-tx-2-color: rgb(145, 143, 143);
+  --main-tx-color: #FFF;
+  --main-tx-2-color: #AAA;
   --main-link-color: #005e98;
 
   /* Accordian Colors */
@@ -47,16 +47,21 @@ html, body {
 
 /* HEADING */
 h1 {
-    font-size: calc(1rem + 2vw);
-    font-weight: 600;
+  font-size: calc(1rem + 2vw);
+  font-weight: 600;
+  padding-top: 20px;
 }
+
 h2 {
   font-size: calc(1rem + 0.75vw);
   font-weight: 600;
+  margin: 0;
 }
+
 h3 {
     font-size: calc(0.75rem + 0.5vw);
     font-weight: 200;
+    margin: 0;
 }
 
 /* CONTENT */
