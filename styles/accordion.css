@@ -1,19 +1,25 @@
 .accordion {
-  background-color: #333;
-  color: #eee;
+  background-color: var(--accordian-main);
+  color: var(--main-tx-color);
   cursor: pointer;
-  padding: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
   width: 100%;
   text-align: left;
   border: none;
+  border-radius: 25px;
   outline: none;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
+  margin-bottom: 5px;;
 }
 
-.active,
+.active {
+  background-color: var(--accordian-active);
+}
+
 .accordion:hover {
-  background-color: #444;
+  background-color: var(--accordian-hover);
 }
 
 .panel {
