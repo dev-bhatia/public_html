@@ -5,9 +5,15 @@
 
 /* GRADIENT ANIMATION */
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* COLORS */
@@ -17,7 +23,7 @@
   --open: #e4ff92;
   --text: #222;
   --link: #0088dc;
-  --grad: linear-gradient(45deg, #ff7777, #ffae00, #ff5353, #ffae00, #ff7777);
+  --grad: linear-gradient(45deg,#000,#000);
 }
 
 body,
@@ -30,18 +36,21 @@ html {
   color: var(--text);
 }
 
+#grad {
+  background: var(--grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient 2s ease infinite;
+}
+
 /* HEADING */
 h1 {
   font-size: calc(1rem + 2vw);
   font-weight: 600;
   text-align: left;
   padding: 20px 0;
-
-  /* background: var(--grad);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 400% 400%;
-  animation: gradient 5s ease infinite; */
 }
 
 h2 {
@@ -100,6 +109,9 @@ a:active:before {
   .base {
     width: 90%;
   }
+  h1 {
+    font-size: calc(1.75rem);
+  }
 }
 
 /* ACCORDIAN */
@@ -113,12 +125,13 @@ a:active:before {
   text-align: left;
   outline: none;
   font-size: 15px;
-  font-size: calc(1rem + 0.7vw);
+  font-size: calc(1em + 1vw);
   font-weight: 600;
   text-align: left;
   border-radius: 25px;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 1em;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
