@@ -47,7 +47,7 @@ html {
 
 /* HEADING */
 h1 {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1rem + 2.5vw);
   font-weight: 600;
   text-align: left;
   padding: 20px 0;
@@ -173,4 +173,10 @@ a:active:before {
 /* 404 */
 .lost {
   width: 80%;
+}
+
+/* CONTACT */
+.form {
+  width: 100%;
+  height: 1000px;
 }
